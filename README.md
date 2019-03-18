@@ -48,7 +48,7 @@ ______
 
 # ARQUITETURA
 
-Foi definida uma arquitetura modular de microserviços e RESTFUL com objetivo de desacoplar totalmente o backend do frontend, e bem como, independente da tecnologia do client.
+Foi definida uma arquitetura modular de microserviços e RESTFUL com objetivo de desacoplar totalmente o backend do frontend, bem como, tornar independente da tecnologia do client.
 
 O Banco de dados escolhido para esta solução foi o PostgreSQL uma solução de banco de dados objeto-relacional de código aberto com licença BSD, podendo ser utilizado livremente no projeto.
 
