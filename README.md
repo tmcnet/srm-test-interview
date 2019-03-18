@@ -56,7 +56,7 @@ ______
 
 # INFORMÇÕES PARA TESTE
 
-### A parte do Angular não ficou 100% finalizada (faltou o post), por favor peço que teste o backend pelo Postman para simular aplicação client.
+### A parte do Angular não ficou 100% finalizada (faltou o post), por favor, faça o teste do backend pelo Postman para simular aplicação client.
 
 ### BANCO DE DADOS
 Usuário: srm
