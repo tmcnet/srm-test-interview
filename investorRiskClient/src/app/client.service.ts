@@ -3,25 +3,25 @@ import { HttpClient } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
 import { Client } from './client';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
-@Injectable
+@Injectable()
 export class ClientService {
-    
-    private _url: string = 'http://localhost:8080/client/add';
 
-    constructor(private http: HttpClient) { }
+    constructor(private http: HttpClient) {
+
+     }
 
     /** POST: add a new client to the database */
-    addClient (client: Client): Observable<Client> {
+    addClient (client: Client) {
 
-    let headers = new HttpHeaders({
-        'Content-Type': 'application/json',
-        });
-    let options = { headers: headers };
+        var url = 'http://localhost:8080/client/add';
+        var clientJson = JSON.stringify(client);
+        var headers = new HttpHeaders();
+        headers.append('Content-Type', 'application/json');
 
-    return this.http.post<Client>(this._url, client, options);
-
+        return this.http.post(url, clientJson, {
+            headers: headers
+        })
     }
-    
-
 }

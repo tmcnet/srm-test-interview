@@ -27,6 +27,7 @@ export class ClientComponent implements OnInit {
 
   onSubmit() {
     console.log(this.clientForm.value);
+    this._clientService.addClient(this.clientForm.value);
   }
 
 }
