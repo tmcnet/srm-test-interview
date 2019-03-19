@@ -20,7 +20,8 @@ export class ClientComponent implements OnInit {
 
     name: new FormControl(),
     creditLimit: new FormControl(),
-    risk: new FormControl('A')
+    risk: new FormControl('A'),
+    interestRate: new FormControl()
   });
 
   ngOnInit(): void {

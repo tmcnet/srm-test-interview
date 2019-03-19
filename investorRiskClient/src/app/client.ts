@@ -4,7 +4,8 @@ export class Client {
         public id: number,
         public name: string,
         public creditLimit: number,
-        public risk: string
+        public risk: string,
+        public interestRate: number
     ) {}
 
 }

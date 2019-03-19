@@ -15,7 +15,7 @@ import com.srmasset.investorRisk.service.ClientService;
  * 
  * @author Thiago Melo (falecom@thiagomelo.com.br)
  */
-@CrossOrigin(origins = "*", maxAge = 3600, allowCredentials = "true", allowedHeaders = "true")
+@CrossOrigin(origins = "*", maxAge = 3600, allowedHeaders = "*")
 @RestController
 public class ClientController {
 	
