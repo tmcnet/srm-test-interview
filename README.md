@@ -52,6 +52,8 @@ Foi definida uma arquitetura modular de microserviços e RESTFUL com objetivo de
 
 O Banco de dados escolhido para esta solução foi o PostgreSQL uma solução de banco de dados objeto-relacional de código aberto com licença BSD, podendo ser utilizado livremente no projeto.
 
+No front-end, foi utilizado a versão mais recente do Angular, ou seja, versão 7.
+
 ______
 
 # INFORMÇÕES PARA TESTE
