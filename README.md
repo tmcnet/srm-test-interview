@@ -72,5 +72,3 @@ Senha: 20190317
 "interestRate":12
 }
 `
-
->  A parte do Angular não ficou 100% finalizada (faltou o post), por favor, faça o teste do backend pelo Postman para simular aplicação client.
