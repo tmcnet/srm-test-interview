@@ -19,9 +19,10 @@ export class ClientService {
         var clientJson = JSON.stringify(client);
         var headers = new HttpHeaders();
         headers.append('Content-Type', 'application/json');
+        headers.append('Access-Control-Allow-Origin', '*');
 
         return this.http.post(url, clientJson, {
             headers: headers
-        })
+        }).pipe(map(res => res));
     }
 }

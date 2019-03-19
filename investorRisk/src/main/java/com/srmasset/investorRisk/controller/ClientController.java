@@ -1,6 +1,7 @@
 package com.srmasset.investorRisk.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +15,7 @@ import com.srmasset.investorRisk.service.ClientService;
  * 
  * @author Thiago Melo (falecom@thiagomelo.com.br)
  */
+@CrossOrigin(origins = "*", maxAge = 3600, allowCredentials = "true", allowedHeaders = "true")
 @RestController
 public class ClientController {
 	

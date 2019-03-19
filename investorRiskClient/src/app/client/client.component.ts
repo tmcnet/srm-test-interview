@@ -12,6 +12,8 @@ import { ClientService } from '../client.service';
 })
 export class ClientComponent implements OnInit {
 
+  postData:String;
+
   constructor(private _clientService: ClientService){}
 
   clientForm = new FormGroup({
@@ -27,7 +29,12 @@ export class ClientComponent implements OnInit {
 
   onSubmit() {
     console.log(this.clientForm.value);
-    this._clientService.addClient(this.clientForm.value);
+    this._clientService.addClient(this.clientForm.value)
+    .subscribe(
+      data => this.postData = JSON.stringify(data),
+      error => alert(error),
+      () => console.log("Finished")
+    );
   }
 
 }
